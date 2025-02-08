@@ -34,7 +34,7 @@ public class SeguridadConfig {
                 /* .antMatchers("/publico").permitAll() 
                  * En las ultimas versiones ya no se utiliza, se utiliza requestMatchers
                 */
-                .requestMatchers("/publico", "/privado", "/css/**").permitAll()
+                .requestMatchers("/publico", "/css/**").permitAll()
                 .anyRequest().authenticated()
             )
             .formLogin()
