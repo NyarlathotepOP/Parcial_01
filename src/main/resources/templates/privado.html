@@ -8,6 +8,9 @@
     <header>
         <h1>Bienvenido a la Página Privada</h1>
     </header>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Cerrar sesión</button>
+    </form>    
     <main>
         <p>Esta es una página accesible solo con autenticación.</p>
     </main>
